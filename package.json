@@ -5,8 +5,8 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "(https://github.com/linojung/Wetube-clone)"
+    "url": "git+https://github.com/linojung/Wetube-clone.git"
   },
   "author": "linojung",
-  "license": "ISC"
+  "license": "MIT"
 }
