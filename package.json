@@ -11,5 +11,8 @@
     "win": "node index.js"
   },
   "author": "linojung",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
