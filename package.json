@@ -7,6 +7,9 @@
     "type": "git",
     "url": "git+https://github.com/linojung/Wetube-clone.git"
   },
+  "scripts": {
+    "win": "node index.js"
+  },
   "author": "linojung",
   "license": "MIT"
 }
