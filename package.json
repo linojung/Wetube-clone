@@ -8,7 +8,7 @@
     "url": "git+https://github.com/linojung/Wetube-clone.git"
   },
   "scripts": {
-    "dev": "nodemon --exec babel-node src/index.js"
+    "dev": "nodemon --exec babel-node src/server.js"
   },
   "author": "linojung",
   "license": "MIT",
@@ -20,5 +20,6 @@
     "@babel/node": "^7.22.19",
     "@babel/preset-env": "^7.22.20",
     "nodemon": "^3.0.1"
-  }
+  },
+  "type": "module"
 }
