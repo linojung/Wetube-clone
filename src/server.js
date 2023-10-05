@@ -5,11 +5,21 @@ const app = express();
 
 //app 설정
 
-const handleHome = (req, res) => {
-  return res.send("I love you ");
+const gossipMiddleware = (req, res, next) => {
+  console.log("I'm in the middle!");
+  next();
 };
 
-app.get("/", handleHome);
+const handleHome = (req, res, next) => {
+  return res.send("<h1>I love you</h1>");
+};
+
+const handleLogin = (req, res) => {
+  return res.send({ message: "login here." });
+};
+
+app.get("/", gossipMiddleware, handleHome);
+app.get("/login", handleLogin);
 
 const handleListening = () =>
   console.log(`Server listening on port http://localhost:${PORT}🦄`);
