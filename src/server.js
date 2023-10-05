@@ -5,13 +5,15 @@ const app = express();
 
 //app 설정
 
+//this is middleware
 const gossipMiddleware = (req, res, next) => {
   console.log("I'm in the middle!");
   next();
 };
 
-const handleHome = (req, res, next) => {
-  return res.send("<h1>I love you</h1>");
+//this is finalware
+const handleHome = (req, res) => {
+  return res.send("I love middlewares");
 };
 
 const handleLogin = (req, res) => {
