@@ -7,7 +7,7 @@ const app = express();
 
 //this is middleware
 const gossipMiddleware = (req, res, next) => {
-  console.log("I'm in the middle!");
+  console.log(`someone is goin to: ${req.url}`);
   next();
 };
 
